@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+ int addfunction()
+{
+     return 10+20;
+}
+int main()
+{
+      char text[] = "Test Message \n";
+      int function_result = addfunction();
+      printf(text);
+      printf("%d" , function_result);
+      return 0;
+}
