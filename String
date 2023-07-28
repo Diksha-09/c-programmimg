@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main()
+{
+    char text[] = "Test Message";
+    printf(text);
+    return 0;
+)
