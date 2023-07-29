@@ -1,5 +1,5 @@
 #include <stdio.h>
-struct point
+typedef struct point
 {
       int x;
       int y;
@@ -8,7 +8,9 @@ struct point
 
 int main()
 {
-    struct point newpoint;
+    point newpoint;
+    tyoedef int NEWINT;
+    NEWINT TEST = 10;
     newpoint.x = 12;
     newpoint.y = 15;
     newpoint.z = 20;
