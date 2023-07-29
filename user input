@@ -1,0 +1,8 @@
+#inlude <stdio.h>
+
+int main()
+{
+     char user_input(100);
+     gets(user_input);
+     printf(%s\n" , user_input);
+     return 0;
