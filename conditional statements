@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <stdio.h>
+#include <string.h>
+int calculate_result(int num1 , int num2 , char *opcode)
+{
+       if(!strcmp(opcode, "+"))
+       {
+                return num1+num2;
+       }
+       else if(!strcmp(opcode,"-")) 
+       {
+              return num1-num2;
+       }
+       else if(!strcmp(opcode,"*"))
+       {
+              return num1*num2;
+       }
+       else if(!strcmp(opcode,"/"))
+       {
+              return num1/num2;
+       }
+       else
+       { 
+             return -1;
+       }
+}
+int main()
+{
+       char num_1_str[100] ;
+       char num_2_str[100] ;
+       char opcode[4] ;
+
+       printf("enter a first number\n") ;
+       gets(num_1_str) ;
+       int num_1 = atoi(num_1_str) ;
+
+       print("enter a second number\n") ;
+       gets(num_2_str) ;
+       int num_2 = atoi(num_2_str) ;
+       printf("enter an aperation") ;
+       gets(opcode) ;
+
+       int result = calculate_result(num_1 , num_2 , opcode) ;
+       if(result != -1)
+       {
+           printf("the result of your calculation was %d\n" , result) ;
+
+       return 0 ;
+}
