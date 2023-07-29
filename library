@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+       char num_1_str[100] ;
+       char num_2_str[100] ;
+
+       gets(num_1_str[100] ;
+       int num_1 = atoi(num_1_str) ;
+       printf("enter a second number to add to your first\n") ;
+
+       gets(num_2_str) ;
+       int num_2 = atoi(num_2_str) ;
+
+       int result = num_1 + num|_2 ;
+
+       printf("the calculation result is %d\n" , result);
+       return 0 ;
+}
