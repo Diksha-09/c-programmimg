@@ -1,0 +1,24 @@
+#include <stdio.h>
+struct point
+{
+      int x;
+      int y;
+      int z;
+};
+
+int main()
+{
+    struct point newpoint;
+    newpoint.x = 12;
+    newpoint.y = 15;
+    newpoint.z = 20;
+
+    printf("this point has an x of %d\n", newpoint.x);
+    printf("this point has a y of %d\n", newpoint.y);
+    printf("this point has a z of %d\n", newpoint.z);
+
+    return 0;
+}
+
+
+  
