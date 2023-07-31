@@ -1,0 +1,11 @@
+#includ<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+       int *number_array;
+       number_array = malloc(10*sizeof(int));
+       number_array[10] = 256;
+       printf("the value stored at the index 1 is %d", number_array[10]);
+       return 0;
+}
