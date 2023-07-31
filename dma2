@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int main()
+{
+  char *newchar;
+  newchar = malloc(10*sizeof(char));
+  strcpy(newchar , "initial");
+  newchar = realloc(newchar,50*sizeof(char));
+  strcat(newchar, "additional string data");
+  printf( %s\n",newchar);
+  free(newchar);
+  if(newchar !=NULL)
+  {
+    printf("unable to allocate new memory");
+  }
+  else
+  {
+    //we can continue the rest of our code here
+  }
+  return 0;
+  }
