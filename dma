@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Node
+{
+    int data;
+    struct Node *next;
+};
+struct List
+{  
+    struct Node *head;
+};
+
+void pushList(List(List *linked_list, int value)
+{
+      if9linked_list->head == NULL)
+      {
+             struct Node *newNode;
+             newNode = malloc(sizeof(structNode));
+             newNode->date = value;
+
+             linked_list->head = newNode;
+       }
+       else
+        {
+               struct Node *tNode = linked_list->head;
+               while(tNode ->next != NULL)
+               {
+                       tNode = tNode->next;
+                }
+                struct Node *newNode;
+                newNode = malloc(sizeof(struct Node));
+                newNode->data = value
+
+                tNode->next = newNode;
+         }
+}
+void printNodes(struct List *linked_list
+{
+       struct Node *tNode = linked_list->head;
+       while(tNode!=NULL)
+       {
+               printf("this node has a value of %d\n", tNode->data);
+               tNode = tNode->next;
+        }
+}
+int main()
+{
+       struct List newlist = {0};
+       pushList(&newlist,200);
+       pushList(&newlist,349);
+       pushList(&newlist,256);
+       pushList(&newlist,989);
+
+       printNodes(&newlist);
+       return 0;
+}
+
+        
+       
